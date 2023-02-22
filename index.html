@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Dice Game</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* border: 1px solid; */
+      font-family: 'Shantell Sans', cursive;
+    }
+    body{
+        background-color: #BAD7E9;
+    }
+    div.h1Div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      height: 200px;
+      width: 80%;
+      margin: auto;
+    }
+    .h1Div h1 {
+      font-size: 50px;
+    }
+
+    div.imgDiv {
+      display: flex;
+      width: 80%;
+      height: auto;
+      margin: auto;
+      margin-top: 100px;
+      /* padding: 20px; */
+      gap: 50px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .imgDiv div div {
+      margin: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    div.h2Div {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      /* text-align: center; */
+    }
+    .h2Div button {
+      display: block;
+      width: 40%;
+      height: 40px;
+      margin: auto;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      text-align: center;
+      cursor: pointer;
+      color: white;
+      background-color:#2B3467 ;
+    }
+    .h2Div h1 {
+      text-align: center;
+    }
+    hr{
+        background-color: black;
+    }
+  </style>
+
+  <body>
+    <div class="h1Div">
+      <h1>Dice Game</h1>
+      <img
+        src="images/diceIcon.png"
+        alt="diceImage"
+        width="100px"
+        height="auto"
+      />
+    </div><hr size="5px">
+
+    <div class="imgDiv">
+      <div id="imgdiv1">
+        <div id="player1">Player 1</div>
+        <img
+          src="images/six.png"
+          id="dice1"
+          alt="dic1"
+          width="200px"
+          height="200px"
+        />
+      </div>
+      <div id="imgdiv2">
+        <div id="player2">Player 2</div>
+        <img
+          src="images/six.png"
+          id="dice2"
+          alt="dic2"
+          width="200px"
+          height="200px"
+        />
+      </div>
+    </div>
+
+    <div class="h2Div">
+      <button id="playGameBtn">Play Game</button>
+      <h1 id="winnerName"></h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
